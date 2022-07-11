@@ -1,14 +1,1687 @@
-root {
-    --primario-web: #FFC950; /* Naranja*/
-    --negro-web: #1e1e1c; 
-    --blanco-web: #f3f3f3;
-    --gris-web: #6f6f6f;
+:root {
+  --primario-web: #F45000;
+  /* Naranja*/
+  --secundario-web: #ff8c5a;
+  /* Naranja secundario */
+  --negro-web: #181818;
+  --blanco-web: #ffffff;
+  --gris-web: #6b6b6b;
+  --blanco-texto: #fcfcfc
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    overflow-x: hidden !important;
+footer {
+  z-index: 999;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+
+/* ? MEDIA QUERY DESKTOP */
+@media (min-width: 768px) {
+  .ocultar-desktop{
+    display: none!important;
+  }
+  .container {
+    max-width: 76vw !important;
+    margin-left: 12vw !important;
+    margin-right: 12vw !important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 2.8vw !important;
+    font-weight: bold!important;
+  }
+  
+  h2 {
+    font-size: 2.8vw !important;
+    font-weight: bold!important;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.6vw !important;
+    font-weight: 700!important;
+  }
+
+  p,
+  li {
+    font-size: 18px;
+    line-height: 18pt;
+  }
+
+  /*======MAQUETACION CORREOS======*/
+
+  /*======MAQUETACION CORREOS======*/
+
+  .iframe-mapa {
+    border-radius: 45px;
+    width: 80vw;
+    height: 50vh;
+    border: 0;
+  }
+
+  .boton-primario-contacto {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    width: 30%;
+    margin-left: 35%;
+    border: 2px solid var(--primario-web);
+    font-size: 1.4vw;
+  }
+
+  .boton-secundario-contacto {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: var(--blanco-web-web);
+    border-radius: 45px;
+    width: 30%;
+    margin-left: 35%;
+    border: 2px solid var(--primario-web);
+    font-size: 1.4vw;
+  }
+
+  .boton-form-primario {
+    padding-top: 3%;
+    margin-top: 20%;
+    padding-bottom: 3%;
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    width: 100%;
+    border: 2px solid var(--primario-web);
+  }
+  .formp{
+    margin-left: 2.8%;
+  }
+  .form-input {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    width: 100%;
+    padding-left: 6%;
+    border: 2px solid var(--blanco-web);
+  }
+
+  .form-input:focus {
+    border: 2px solid var(--blanco-web);
+    background-color: var(--primario-web);
+    color: var(--blanco-texto);
+  }
+
+  .form-input::placeholder {
+    color: var(--negro-web);
+    font-size: 1vw !important;
+  }
+
+  .form-input:focus::placeholder {
+    color: var(--blanco-texto);
+  }
+
+  .texto-blanco {
+    color: var(--blanco-texto);
+  }
+
+  .texto-negro {
+    color: var(--negro-web);
+  }
+
+  .texto-primario {
+    color: var(--primario-web);
+  }
+
+  a:hover {
+    color: var(--primario-web) !important;
+    text-decoration: underline !important;
+  }
+
+  .card-primario {
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  .card-blanco {
+    width: 22%; 
+    background-color: var(--blanco-web);
+    border-radius: 60px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+  }
+  .align-card{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .form-glass {
+    width: 30%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    border-radius: 90px;
+    display: inline-block;
+  }
+
+  /* * MENU STYLE */
+  .menumovil {
+    display: none;
+  }
+
+  .logo {
+    width: 12vw;
+    padding-top: 15px;
+  }
+  header{
+    height: 20%; 
+  }
+  .menudesktop a{
+    color: var(--negro-web);
+  }
+  .menudesktop a:hover{
+    color: var(--primario-web);
+    text-decoration: none!important;
+  }
+  .menudesktop p{
+    font-weight: bold;
+  }
+  /* ! MENU FIN */
+
+  /* * HOME */
+  .texto-home{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15%;
+  }
+  .texto-home h1{
+    font-size: 2.8vw!important;
+    padding-left: 12vw;
+  }
+
+  .bg-home {
+    padding-bottom: 10%;
+  }
+
+  .form-home {
+    background-image: url(../assets/1\ FOTO\ banner-moto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .motos-home {
+    position: relative;
+    bottom: 400px;
+    width: 100%;
+    height: 15vh;
+
+  }
+
+  .moto-home {
+    background-image: url(../assets/home\ moto.png);
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-size: 20% auto;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    overflow: hidden;
+    height: 58vh;
+  }
+
+  .moto-home2 {
+    background-image: url(../assets/home\ moto\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+    background-position: 70% 120%;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    overflow: hidden;
+    height: 58vh;
+
+  }
+  .motos-home-desktop{
+    background-image: url(../assets/2\ FOTO\ motos\ juntas.png);
+    background-size: 50vw;
+    margin-left: 25vw;
+    width: 100vw!important;
+    height: 100vh!important;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0!important;
+  }
+  .foto-banner {
+    background-image: url(../assets/foto\ banner\ flexicar.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left 60% top 30%;
+  }
+
+  .foto-banner h2{
+    padding-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  a.boton_flexicar {
+    text-decoration: none;
+    color: var(--blanco-texto);
+  }
+
+  .bloque-icono{
+    width: 20%;
+    text-align: start;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .bloque-icono > img{
+    width: 8vw;
+  }
+
+  .bloque-icono > p{
+    line-height: 200%;
+  }
+
+  .px-bloque-icono{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+
+  .bloque-valoracion h2{
+    margin-top: 5%;
+  }
+  .bloque-valoracion > p{
+    font-size: 2.2vw;
+    padding-bottom: 5%
+  }
+
+  .bloque-valoracion{
+    margin-bottom: 4%;
+  }
+
+  /* ! HOME FIN */
+
+  /* * COMO-FUNCIONA */
+
+  .bg-web-primario {
+    background-color: var(--primario-web);
+    text-align: center;
+  }
+
+  .card-blanco-venta {
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 11% !important;
+    padding-right: 11% !important;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  .card-blanco-venta h3 {
+    font-weight: 550;
+  }
+
+  .venta-tit {
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .image-venta {
+    width: 6vw;
+  }
+
+  .ayuda-venta {
+    background-image: url(../assets/foto_banner_silueteado1.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 5%;
+  }
+
+  .ayuda-venta.row {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+  .boton-primario {
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    width: 70%;
+    border: 2px solid var(--primario-web);
+  }
+
+  .bg-como-funcionamos-list {
+    background-image: url(../assets/foto_como_funcionamos_fondo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 300% auto;
+    padding-bottom: 60%;
+    text-align: center;
+  }
+
+  .motero-funcionamos {
+    /* position: absolute;*/
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/como_funcionamos_moto_silueteada.png);
+    background-size: cover;
+    bottom: 0%;
+  }
+
+  .lista-funcionamos {
+    color: var(--blanco-web);
+    list-style-type: inherit;
+    text-align: left;
+    padding-left: 14%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .lista-funcionamos a {
+    color: var(--negro-web);
+    text-decoration: underline;
+  }
+
+  .lista-funcionamos li {
+    padding-bottom: 11%;
+  }
+
+  .listado-como {
+    position: relative;
+    background-image: url(../assets/foto_como_funcionamos_fondo.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 250% auto;
+    padding-bottom: 30%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .moto-listado {
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    background-image: url(../assets/como_funcionamos_moto_silueteada.png);
+    background-size: cover;
+    bottom: 0;
+    background-position: left center;
+  }
+
+
+
+  /* ! COMO-FUNCIONA FIN */
+
+  /* * TASADOR */
+
+  .tasador {
+    position: relative;
+    background-image: url(../assets/foto\ tasacion.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .tasador h2{
+    padding-top: 5%;
+    font-weight: 400!important;
+  }
+  .bloque-moto-tasador{
+    margin-left: 12%;
+    margin-right: 12%;
+    height: 100vh;
+  }
+  .bloque-moto-tasador p{
+    width: 100%;
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    background-image: url(../assets/1d\ FOTO\ cabecera\ -\ moto\ +\ fondonaranja.png);
+    background-size: cover;
+    height: 100%;
+  }
+
+  .moto-tasador {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../assets/moto\ tasacion.png);
+    background-size: cover;
+    bottom: 0;
+  }
+
+  .icono-tasador {
+    width: 20vw;
+
+  }
+
+  .form-tasador {
+    background-image: url(../assets/foto\ oscura.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* ! TASADOR FIN */
+
+  /* * FAQs */
+  .accordion-header {
+    background-color: var(--blanco-web);
+    cursor: pointer;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    transition: all 0.4s ease-in-out;
+    border-radius: 45px;
+  }
+
+  .accordion-body {
+    transition: all 0.35s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    width: 96%;
+    padding-left: 2%;
+  }
+
+  .accordion-header h3 {
+    margin-bottom: 0.8vh;
+    margin-top: 0.8vh;
+    font-size: 1.2vw !important;
+  }
+
+  .accordion-body p {
+    padding: 1rem 1.5rem;
+    line-height: 1.8;
+  }
+
+  .accordion+.accordion {
+    margin-top: 1rem;
+  }
+
+  .accordion-icon {
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .accordion.active .accordion-header {
+    background-color: var(--blanco-web);
+    color: var(--negro-web);
+  }
+
+  .accordion.active .accordion-icon {
+    transform: rotate(-180deg);
+  }
+
+  .cabecera-faqs {
+    background-color: var(--primario-web);
+    height: 20vh;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .accordion {
+    border: 2px solid var(--primario-web);
+    border-radius: 45px;
+  }
+
+  .prefooter-faqs {
+    background-color: var(--primario-web);
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .boton-gris-faqs {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: var(--gris-web);
+    border-radius: 45px;
+    width: 30%;
+    margin-left: 35%;
+    border: 2px solid var(--gris-web);
+    font-size: 1.4vw;
+  }
+
+  .prefooter-faqs h2{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+
+  }
+  /* !FIN FAQs */
+
+  /* * 404 */
+
+  .pagina-error {
+    background-image: url(../assets/ERROR\ nuevo.png);
+    background-size:105%;
+    background-position: center bottom;
+    height: 60vw;
+    background-repeat: no-repeat;
+    font-weight: bold;
+  }
+
+  .pagina-error h1 {
+    font-size: 9vw !important;
+    font-weight: bold;
+  }
+
+  .pagina-error h3 {
+    font-size: 3vw!important;
+    font-weight: bold !important;
+    padding-left: 12%!important;
+  }
+  .pagina-error p {
+    font-size: 2vw!important;
+    padding-left: 0!important;
+  
+  }
+
+  .titulo-error {
+    text-transform: none !important;
+    font-weight: bolder !important;
+  }
+  .pagina-error .col{
+    padding-left: 55%!important;
+  }
+
+  /* ! 404 FIN */
+
+  /* * GRACIAS */
+
+  .gracias-tit {
+    font-size: 8vw !important;
+    font-weight: 900;
+    margin-bottom: 0px;
+    padding-top: 5%;
+  }
+
+  .gracias-tit2 {
+    font-size: 2.8vw !important;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+
+  .texto-gracias h3 {
+    width: 20vw;
+  }
+  .texto-gracias p{
+    width: 30vw;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    padding-top: 2%;
+    padding-bottom: 10%;
+  }
+
+  .bg-bloque-gracias {
+    background-image: url(../assets/GRACIAS\ nuevo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-bottom: 5%;
+  }
+
+  /* ! GRACIAS FIN */
+
+  /* * CONTACTO */
+
+  .form-contacto {
+    background-image: url(../assets/foto\ oscura\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .input-texto {
+    padding-bottom: 40%;
+    border-radius: 20px;
+    ;
+  }
+
+  .titulo-contacto {
+    text-transform: none !important;
+  }
+  
+  /* ! CONTACTO FIN */
+
+  /* * LEGAL PAGES */
+  .cabecera-legal {
+    background-color: var(--primario-web);
+  }
+  .cabecera-legal h2 {
+    width: 50%;
+    margin-left: 25%!important;
+    font-weight: 500!important;
+    padding-top: 3%!important;
+    padding-bottom: 2%!important;
+  }
+  .contenedor-legal{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .contenedor-legal h3{
+    padding-bottom: 3%;
+  }
+  /* ! FIN LEGAL PAGES */
+
+  /* * FOOTER */
+
+  footer {
+    background-color: var(--negro-web);
+  }
+
+  footer.contenido-footer {
+    padding-left: 12%;
+    padding-right:12%;
+    padding-top: 20px;
+  }
+
+  .logo-footer {
+    width: 27vw;
+  }
+
+  h3.claim-footer {
+    color: var(--primario-web);
+    font-size:small;
+  }
+
+  a.texto-footer {
+    font-size: small;
+  }
+
+  a.texto-footer:hover {
+    color: var(--primario-web);
+  }
+
+  hr {
+    background-color: var(--primario-web);
+    width: 100%;
+  }
+
+  .rrss {
+    padding-inline-start: 6vw;
+    padding-inline-end: 6vw;
+  }
+
+  a.btn-social,
+  .btn-social {
+      border-radius: 50%;
+      color: var(--negro-web);
+      display: inline-block;
+      height: 38px;
+      line-height: 38px;
+      margin: 8px 22px;
+      text-align: center;
+      text-decoration: none;
+      width: 38px;
+  }  
+
+  .btn-social .fa,
+  .btn-social i {
+    backface-visibility: hidden;
+    transition: all .25s;
+
+  }
+
+  .btn-social:hover,
+  .btn-social:focus {
+    color: var(--negro-web);
+    outline: none;
+    text-decoration: none;
+  }
+
+  .btn-social:hover .fa,
+  .btn-social:focus .fa,
+  .btn-social:hover i,
+  .btn-social:focus i {
+    transform: scale(1.3);
+  }
+
+  .btn-social.btn-xs {
+    font-size: 3px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+  }
+
+  .btn-social.btn-sm {
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+  }
+
+  .btn-social.btn-lg {
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+  }
+
+  .btn-social {
+    background-color: var(--primario-web);
+  }
+
+  .btn-social:hover {
+    background-color: var(--blanco-web);
+  }
+
+  .rrss {
+    margin: 1px;
+    font-size: 14px;
+  }
+
+  a.copy:hover {
+    color: var(--negro-web);
+  }
+
+  .copy {
+    font-size: 8px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fade-in-efecto {
+    animation: fadeIn 1400ms;
+  }
+
+  /*  ! FOOTER FIN */
+}
+
+
+/* ? MEDIA QUERY MOBILE */
+@media (max-width: 767px) {
+  .ocultar-movil{
+    display: none!important;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 4.8vw !important;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 4.8vw !important;
+    font-weight: bold;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 16px !important;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+    line-height: 18pt;
+  }
+
+  .iframe-mapa {
+    border-radius: 45px;
+    width: 80vw;
+    height: 50vh;
+    border: 0;
+  }
+
+  .boton-primario-contacto {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    width: 70%;
+    margin-left: 15%;
+    border: 2px solid var(--primario-web);
+  }
+
+  .boton-secundario-contacto {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    width: 70%;
+    margin-left: 15%;
+    border: 2px solid var(--primario-web);
+  }
+
+  .boton-form-primario {
+    padding-top: 3%;
+    margin-top: 20%;
+    padding-bottom: 3%;
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    width: 100%;
+    border: 2px solid var(--primario-web);
+  }
+
+  .form-input {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    width: 100%;
+    padding-left: 6%;
+    border: 2px solid var(--blanco-web);
+  }
+
+  .form-input:focus {
+    border: 2px solid var(--blanco-web);
+    background-color: var(--primario-web);
+    color: var(--blanco-texto);
+  }
+
+  .form-input::placeholder {
+    color: var(--negro-web);
+    font-size: 3.2vw !important;
+  }
+
+  .form-input:focus::placeholder {
+    color: var(--blanco-texto);
+  }
+
+  .texto-blanco {
+    color: var(--blanco-texto);
+  }
+
+  .texto-negro {
+    color: var(--negro-web);
+  }
+
+  .texto-primario {
+    color: var(--primario-web);
+  }
+
+  a:hover {
+    color: var(--primario-web) !important;
+    text-decoration: underline !important;
+  }
+
+  .card-primario {
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  .card-blanco {
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+
+  .form-glass {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 10% 10% 10% 10%;
+    border-radius: 45px;
+  }
+
+  /* * MENU STYLE */
+  .menudesktop {
+    display: none;
+  }
+
+  .logo {
+    width: 40vw;
+  }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 0px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: var(--negro-web);
+
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: var(--primario-web);
+    text-decoration: none !important;
+  }
+
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: var(--primario-web);
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /*  Transformacion de la hamburguesa en la cruz */
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--primario-web);
+  }
+
+  /* Oculta la carne y se quedan solo los panes */
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /* Cambio de direccion en la de abajo */
+  #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /* Posicion del icono */
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: 20% 0 0 -600%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 50%;
+
+    background: var(--blanco-web);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    /* Movimiento horizontal */
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  #menu li:hover {
+    color: var(--primario-web);
+    text-decoration: none !important;
+  }
+
+
+  /* Efecto del slide */
+  #menuToggle input:checked~ul {
+    transform: none;
+  }
+
+  .barra-menu {
+    background-color: var(--primario-web);
+    width: 65%;
+  }
+
+  #menuToggle input:checked~body {
+    -webkit-filter: blur(5px);
+    /* Chrome, Safari, Opera */
+    filter: blur(5px);
+  }
+
+  /* ! MENU FIN */
+
+  /* * HOME */
+
+  /*======MAQUETACION CORREOS======*/
+  footer.contenido-header {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 20px;
+  }
+
+  .logo-header {
+    width: 50vw;
+  }
+  /*======MAQUETACION CORREOS======*/
+
+
+
+  .bg-home {
+    padding-bottom: 40%;
+  }
+
+  .form-home {
+    background-image: url(../assets/foto\ formulario\ contacto.png);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .motos-home {
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+    height: 10vh;
+
+  }
+
+  .moto-home {
+    background-image: url(../assets/home\ moto.png);
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: 45% auto;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    overflow: hidden;
+    height: 58vh;
+  }
+
+  .moto-home2 {
+    background-image: url(../assets/home\ moto\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 65% auto;
+    background-position: right 10%;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    overflow: hidden;
+    height: 58vh;
+
+  }
+
+  .foto-banner {
+    /* position: relative; */
+    background: url(../assets/foto\ banner\ flexicar.png);
+    /* height: 100%; */
+    background-attachment: fixed;
+    background-position: right 64% top 20%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* min-height: 100%; */
+}
+
+  /* ! HOME FIN */
+
+  /* * COMO-FUNCIONA */
+
+  .bg-web-primario {
+    background-color: var(--primario-web);
+    text-align: center;
+  }
+
+  .card-blanco-venta {
+    background-color: var(--blanco-web);
+    border-radius: 45px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 11% !important;
+    padding-right: 11% !important;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  .card-blanco-venta h3 {
+    font-weight: 550;
+  }
+
+  .venta-tit {
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .image-venta {
+    width: 30vw;
+  }
+
+  .ayuda-venta {
+    background-image: url(../assets/foto_banner_silueteado1.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 200%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+
+  .ayuda-venta.row {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+  .boton-primario {
+    background-color: var(--primario-web);
+    border-radius: 45px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    width: 70%;
+    border: 2px solid var(--primario-web);
+  }
+
+  .bg-como-funcionamos-list {
+    background-image: url(../assets/foto_como_funcionamos_fondo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 300% auto;
+    padding-bottom: 60%;
+    text-align: center;
+  }
+
+  .motero-funcionamos {
+    /* position: absolute;*/
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/como_funcionamos_moto_silueteada.png);
+    background-size: cover;
+    bottom: 0%;
+  }
+
+  .lista-funcionamos {
+    color: var(--blanco-web);
+    list-style-type: inherit;
+    text-align: left;
+    padding-left: 14%;
+    padding-right: 8%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .lista-funcionamos a {
+    color: var(--negro-web);
+    text-decoration: underline;
+  }
+
+  .lista-funcionamos li {
+    padding-bottom: 11%;
+  }
+
+  .listado-como {
+    position: relative;
+    background-image: url(../assets/foto_como_funcionamos_fondo.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 250% auto;
+    padding-bottom: 30%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .moto-listado {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-image: url(../assets/como_funcionamos_moto_silueteada.png);
+    background-size: cover;
+    bottom: 0;
+    background-position: left 40% center;
+  }
+
+
+
+  /* ! COMO-FUNCIONA FIN */
+
+  /* * TASADOR */
+
+  .tasador {
+    position: relative;
+    background-image: url(../assets/foto\ tasacion.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 300% auto;
+    padding-bottom: 30%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .moto-tasador {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../assets/moto\ tasacion.png);
+    background-size: cover;
+    bottom: 0;
+  }
+
+  .icono-tasador {
+    width: 20vw;
+
+  }
+
+  .form-tasador {
+    background-image: url(../assets/foto\ formulario\ tasacion2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  /* ! TASADOR FIN */
+
+  /* * FAQs */
+  .accordion-header {
+    background-color: var(--blanco-web);
+    cursor: pointer;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    transition: all 0.4s ease-in-out;
+    border-radius: 25px;
+  }
+
+  .accordion-body {
+    transition: all 0.35s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--blanco-web);
+    border-radius: 25px;
+  }
+
+  .accordion-header h3 {
+    margin-bottom: 0.8vh;
+    margin-top: 0.8vh;
+    font-size: 3.5vw !important;
+  }
+
+  .accordion-body p {
+    padding: 1rem 1.5rem;
+    line-height: 1.8;
+  }
+
+  .accordion+.accordion {
+    margin-top: 1rem;
+  }
+
+  .accordion-icon {
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .accordion.active .accordion-header {
+    background-color: var(--blanco-web);
+    color: var(--negro-web);
+  }
+
+  .accordion.active .accordion-icon {
+    transform: rotate(-180deg);
+  }
+
+  .cabecera-faqs {
+    background-color: var(--primario-web);
+    height: 10vh;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .accordion {
+    border: 1.5px solid var(--primario-web);
+    border-radius: 25px;
+  }
+
+  .prefooter-faqs {
+    background-color: var(--primario-web);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .boton-gris-faqs {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: var(--gris-web);
+    border-radius: 45px;
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid var(--gris-web);
+  }
+
+  /* !FIN FAQs */
+
+  /* * 404 */
+
+  .pagina-error {
+    background-image: url(../assets/error.png);
+    background-position: center top;
+    background-size: 125% auto;
+    height: 125vw;
+    background-repeat: no-repeat;
+    font-weight: bold;
+  }
+
+  .pagina-error h1 {
+    font-size: 65px !important;
+    font-weight: bold;
+  }
+
+  .pagina-error h3 {
+    font-weight: bold !important;
+  }
+
+  .titulo-error {
+    text-transform: none !important;
+    font-weight: bolder !important;
+  }
+
+  /* ! 404 FIN */
+
+  /* * GRACIAS */
+  .bg-gracias {
+    padding-bottom: 10%;
+  }
+
+  .gracias-tit {
+    font-size: 14vw !important;
+    font-weight: 900;
+    margin-bottom: 0px;
+  }
+
+  .gracias-tit2 {
+    font-size: 5vw !important;
+    font-weight: 500;
+  }
+
+  .texto-gracias {
+    width: 60vw;
+  }
+
+  .bg-bloque-gracias {
+    background-image: url(../assets/moto\ gracias.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: right -10% bottom 25%;
+  }
+  .bg-bloque-gracias .boton-gris-faqs{
+    margin-top: 15%!important;
+  }
+  /* ! GRACIAS FIN */
+
+  /* * CONTACTO */
+
+  .form-contacto {
+    background-image: url(../assets/fondo\ formulario\ contacto2.png);
+    background-size: 350%;
+    background-repeat: no-repeat;
+    background-position: left 40% center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .input-texto {
+    padding-bottom: 40%;
+    border-radius: 20px;
+    ;
+  }
+
+  .titulo-contacto {
+    text-transform: none !important;
+  }
+
+  /* ! CONTACTO FIN */
+
+  /* * LEGAL PAGES */
+  .cabecera-legal {
+    background-color: var(--primario-web);
+    height: 20%;
+  }
+
+  /* ! FIN LEGAL PAGES */
+
+  /* * FOOTER */
+
+
+  header.contenido-footer {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 20px;
+  }
+
+  .logo-footer {
+    width: 50vw;
+  }
+
+  h3.claim-footer {
+    color: var(--primario-web);
+    font-size: medium;
+  }
+
+  a.texto-footer {
+    font-size: small;
+  }
+
+  a.texto-footer:hover {
+    color: var(--primario-web);
+  }
+
+  hr {
+    background-color: var(--primario-web);
+    width: 100%;
+  }
+
+  .rrss {
+    padding-inline-start: 6vw;
+    padding-inline-end: 6vw;
+  }
+
+  a.btn-social,
+  .btn-social {
+    border-radius: 50%;
+    color: var(--negro-web);
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 28px;
+  }
+
+  .btn-social .fa,
+  .btn-social i {
+    font-size: 1.33333333em;
+    backface-visibility: hidden;
+    transition: all .25s;
+
+  }
+
+  .btn-social:hover,
+  .btn-social:focus {
+    color: var(--negro-web);
+    outline: none;
+    text-decoration: none;
+  }
+
+  .btn-social:hover .fa,
+  .btn-social:focus .fa,
+  .btn-social:hover i,
+  .btn-social:focus i {
+    transform: scale(1.3);
+  }
+
+  .btn-social.btn-xs {
+    font-size: 3px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+  }
+
+  .btn-social.btn-sm {
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+  }
+
+  .btn-social.btn-lg {
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+  }
+
+  .btn-social {
+    background-color: var(--primario-web);
+  }
+
+  .btn-social:hover {
+    background-color: var(--blanco-web);
+  }
+
+  .rrss {
+    margin: 1px;
+    font-size: 14px;
+  }
+
+  a.copy:hover {
+    color: var(--negro-web);
+  }
+
+  .copy {
+    font-size: 8px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fade-in-efecto {
+    animation: fadeIn 1400ms;
+  }
+
+  /*  ! FOOTER FIN */
 }

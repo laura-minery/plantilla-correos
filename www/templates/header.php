@@ -1,6 +1,9 @@
-<header> 
-
-    <h3> Header </h3>
-    <?php include('templates/nav.php');?>
-
+<header class="contenido-header" style="background-color:cian;">
+  <div row="col">
+    <div class="text-center">
+      <img src="./assets/logo negro.svg" class="img-fluid logo-header" alt="...">
+    </div>
+  </div>
+  
+  
 </header>
