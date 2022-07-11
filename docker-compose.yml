@@ -1,0 +1,20 @@
+version: "3"
+#Indicamos la version docker compose que utilizamos
+
+#Y luego los servicios que vamos a implementar
+services:
+
+#Aquí indicamos el nombre que queramos
+  mi_servicio_apache:
+    #Imagen de APACHE con PHP
+    image: php:7.0-apache
+    container_name: apache-container
+    volumes:
+      #Carpeta donde guardaremos los archivos web : carpeta interna de Docker
+      - ./www/:/var/www/html
+    expose:
+      #Puerto que queremos exponer a para poder compartirlo con otros contenedores
+      - 8080
+    ports:
+      # Puerto de nuestra máquina : puerto dentro de Docker (siempre va a ser el 80 para apache o 443 para SSL)
+      - 8080:80

@@ -1,0 +1,14 @@
+root {
+    --primario-web: #FFC950; /* Naranja*/
+    --negro-web: #1e1e1c; 
+    --blanco-web: #f3f3f3;
+    --gris-web: #6f6f6f;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden !important;
+}
