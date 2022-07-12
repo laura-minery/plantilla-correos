@@ -16,6 +16,15 @@
     margin: 0;
     padding: 0;
   }
+  h2 {
+    font-size: 3.7vw !important;
+    font-weight: bold!important;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 2.8vw;
+    font-weight: 500;
+  }
   
   footer {
     z-index: 999;
@@ -30,16 +39,30 @@
     width: 100vw;
     overflow-x: hidden !important;
   }
+  .logo-header{
+    width: 50%;
+    padding-bottom: 6%;
+  }
+  .texto-primario {
+    color: var(--primario-web);
+    margin-bottom: 0;
+   
+  }
+  .moto-correo img {
+    position: absolute;
+    top:50%;
+    width: 100%;
+  }
 
 /* ? MEDIA QUERY DESKTOP */
 @media (min-width: 768px) {
-  .centrar {
-    text-align: center;
+  .seccion_uno_contacto{
+    padding-bottom: 3%;
   }
 }
-/* ? MEDIA QUERY MOBILE */
+
+  /* ? MEDIA QUERY MOBILE */
 @media (max-width: 767px) {
-    .centrar {
-        text-align: center;
-      }
+
 }
+

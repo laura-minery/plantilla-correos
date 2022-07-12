@@ -1,19 +1,66 @@
-<?php 
-$url = $_SERVER['REQUEST_URI'];
-//echo $url;
-//include $url."/header.php";
+<!DOCTYPE html>
+<html lang="en">
 
-   
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+    <title>Flexibike</title>
 
-    include('templates/head.php');
-    include('templates/header.php');
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<header class="container text-center">
+    <div class="row">
+        <div class="col">
+            <img src="./assets/logo negro.svg" class="logo-header" alt="...">
+        </div>
+    </div>
+</header>
+<body>
+<div class="container text-center">
+    <div class="col">
+        <div class="row">
+            <h2 class="texto-primario">GRACIAS (NOMBRE)</h2>
+            <p class="seccion_uno_contacto">por ponerte en contacto con nosotros. <br>Te responderemos en la mayor brevedad posible.</p>
+        </div>
+        <div class="row">
+            <p class="seccion_uno_contacto">A continuación indicamos los datos que has completado desde nuestro formulario web:</p>
+        </div>
+        <div class="row">
+            <p class="texto-primario">Teléfono: xxx xx xx xx.</p>
+            <p class="texto-primario">Mensaje: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi ad dolorum labore atque laboriosam veniam facilis rerum eveniet dolores non repudiandae quis, amet totam deleniti doloribus? Atque, quaerat? Inventore..</p>
+        </div>
+    </div>
+</div>
+<div class="moto-correo">
+    <img src="./assets/foto tasacion.png" alt="...">
+</div>
+
+<footer class="fixed-bottom" style="background-color: yellow;">
 
 
-    if( $url == "/"  ){
-        include( "home.php");
-    }
+</footer>
+</body>
 
-    include('templates/footer.php');
+</html>
 
-
-?>
+<!-- <div class="text-center py-3 mt-5 bloque-valoracion">
+    <h2 class="texto-primario">GRACIAS (NOMBRE)</h2>
+    <p>¿Cómo funciona?</p>
+    <div class="px-4">
+        <div class="pb-3 bloque-icono">
+            <img class="icono-tasador" src="./assets/7 - Home-tasacion rellena datos moto.svg" alt="Icono Tasacion">
+            <h3 class="texto-primario">rellena los datos de tu moto</h3>
+            <p>Explicación primera parte de tasación. Rellena los datos de tu moto. tinciLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinbortis.</p>
+        </div>
+    </div>
+</div> -->
