@@ -48,11 +48,77 @@
     margin-bottom: 0;
    
   }
+  .texto-footer {
+    color: var(--blanco-texto);
+
+  }
   .moto-correo img {
-    position: absolute;
-    top:50%;
+    position: relative;
     width: 100%;
   }
+  footer {
+    background-color: var(--negro-web);
+    width: 100%;
+    height: auto;
+    }
+
+  a.btn-social,
+  .btn-social {
+      color: var(--blanco-texto);
+      display: inline-block;
+      height: 90px;
+      line-height: 60px;
+      margin: 8px 22px;
+      text-align: center;
+      text-decoration: none;
+      width: 90px;
+  }  
+
+  .btn-social .fa,
+  .btn-social i {
+    backface-visibility: hidden;
+    transition: all .25s;
+
+  }
+
+  .btn-social:hover,
+  .btn-social:focus {
+    color: var(--negro-web);
+    outline: none;
+    text-decoration: none;
+  }
+
+  .btn-social:hover .fa,
+  .btn-social:focus .fa,
+  .btn-social:hover i,
+  .btn-social:focus i {
+    transform: scale(1.6);
+  }
+
+  .btn-social.btn-xs {
+    font-size: 3px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+  }
+
+  .btn-social.btn-sm {
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+  }
+
+  .btn-social.btn-lg {
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+  }
+  
 
 /* ? MEDIA QUERY DESKTOP */
 @media (min-width: 768px) {
