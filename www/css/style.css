@@ -43,12 +43,12 @@
     width: 50%;
     padding-bottom: 6%;
   }
-  .texto-primario {
+  .texto-naranja {
     color: var(--primario-web);
     margin-bottom: 0;
    
   }
-  .texto-footer {
+  .texto-blanco {
     color: var(--blanco-texto);
 
   }
@@ -67,8 +67,8 @@
       color: var(--blanco-texto);
       display: inline-block;
       height: 90px;
-      line-height: 60px;
-      margin: 8px 22px;
+      line-height: 90px;
+      margin: 8px 18px;
       text-align: center;
       text-decoration: none;
       width: 90px;
@@ -78,12 +78,13 @@
   .btn-social i {
     backface-visibility: hidden;
     transition: all .25s;
+    font-size: 4em;
 
   }
 
   .btn-social:hover,
   .btn-social:focus {
-    color: var(--negro-web);
+    color: var(--primario-web);
     outline: none;
     text-decoration: none;
   }
@@ -95,30 +96,12 @@
     transform: scale(1.6);
   }
 
-  .btn-social.btn-xs {
-    font-size: 3px;
-    height: 24px;
-    line-height: 13px;
-    margin: 6px 2px;
-    width: 24px;
+  a.texto-blanco{
+    text-decoration: none;
   }
-
-  .btn-social.btn-sm {
-    font-size: 13px;
-    height: 36px;
-    line-height: 18px;
-    margin: 6px 2px;
-    width: 36px;
+  a.texto-blanco:hover{
+    color: var(--primario-web);
   }
-
-  .btn-social.btn-lg {
-    font-size: 22px;
-    height: 72px;
-    line-height: 40px;
-    margin: 10px 6px;
-    width: 72px;
-  }
-  
 
 /* ? MEDIA QUERY DESKTOP */
 @media (min-width: 768px) {
@@ -129,6 +112,12 @@
 
   /* ? MEDIA QUERY MOBILE */
 @media (max-width: 767px) {
+  .btn-social .fa,
+  .btn-social i {
+    backface-visibility: hidden;
+    transition: all .25s;
+    font-size: 2em;
 
+  }
 }
 
