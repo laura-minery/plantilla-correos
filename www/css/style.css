@@ -108,6 +108,12 @@
     background-image: url(../assets/fototasacion.png);
     background-size: cover;
     padding-bottom: 40%;
+    
+  }
+  .contenido-texto {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  
   }
   /*=======FIN TASACIÓN=======*/
   
