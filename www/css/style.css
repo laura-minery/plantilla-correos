@@ -103,6 +103,20 @@
     color: var(--primario-web);
   }
 
+  /*=======TASACIÓN=======*/
+  .contenedor-moto-correo {
+    position: relative;
+    width: 100%;
+  }
+  .moto-correo-tasacion {
+    background-image: url(../assets/foto\ tasacion.png);
+    position: relative;
+    width: 100%;
+  }
+
+  /*=======FIN TASACIÓN=======*/
+  
+
 /* ? MEDIA QUERY DESKTOP */
 @media (min-width: 768px) {
   .seccion_uno_contacto{
