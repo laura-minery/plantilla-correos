@@ -105,13 +105,14 @@
 
   /*=======TASACIÓN=======*/
   .contenedor-moto-correo {
-    position: relative;
     width: 100%;
+    height: 30vh;
+
   }
   .moto-correo-tasacion {
-    background-image: url(../assets/foto\ tasacion.png);
-    position: relative;
-    width: 100%;
+    background-image: url(../assets/fototasacion.png);
+    background-size: cover;
+    height: 100%;
   }
 
   /*=======FIN TASACIÓN=======*/
