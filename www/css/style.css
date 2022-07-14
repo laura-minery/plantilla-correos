@@ -104,17 +104,11 @@
   }
 
   /*=======TASACIÓN=======*/
-  .contenedor-moto-correo {
-    width: 100%;
-    height: 30vh;
-
-  }
-  .moto-correo-tasacion {
+  .fondo-moto {
     background-image: url(../assets/fototasacion.png);
     background-size: cover;
-    height: 100%;
+    padding-bottom: 40%;
   }
-
   /*=======FIN TASACIÓN=======*/
   
 
