@@ -107,10 +107,14 @@
   
   .fondo-moto {
     background-image: url(../assets/fototasacion.png);
-    background-size: cover;
-    padding-bottom: 40%;
-    
-  }
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* height: 200%; */
+    margin-bottom: 0%;
+    padding-bottom: 22%;
+    /* width: 100%; */
+}
   .contenido-texto-1 {
     padding-top: 8%;
     padding-bottom: 8%;
