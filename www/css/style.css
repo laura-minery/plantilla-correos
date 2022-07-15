@@ -104,16 +104,28 @@
   }
 
   /*=======TASACIÓN=======*/
+  
   .fondo-moto {
     background-image: url(../assets/fototasacion.png);
     background-size: cover;
     padding-bottom: 40%;
     
   }
-  .contenido-texto {
+  .contenido-texto-1 {
     padding-top: 8%;
     padding-bottom: 8%;
-  
+  }
+  .contenido-texto-2 {
+    padding-bottom: 15%;
+  }
+  .contenido-texto-2 .datos-1 .texto-naranja {
+    margin-bottom: 7%;
+  }
+  .contenido-texto-2 .datos-2 {
+    margin-top: 18%;
+  }
+  .contenido-texto-2 .datos-2 .texto-naranja {
+    margin-bottom: 8%;
   }
   /*=======FIN TASACIÓN=======*/
   
