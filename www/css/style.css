@@ -104,7 +104,10 @@
   }
 
   /*=======TASACIÓN=======*/
-  
+  .logo-header-tasacion{
+    width: 40%;
+    padding-bottom: 6%;
+  }
   .fondo-moto {
     background-image: url(../assets/fototasacion.png);
     /* background-size: cover; */
@@ -112,7 +115,7 @@
     background-repeat: no-repeat;
     /* height: 200%; */
     margin-bottom: 0%;
-    padding-bottom: 22%;
+    padding-bottom: 26%;
     /* width: 100%; */
 }
   .contenido-texto-1 {
